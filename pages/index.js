@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="bg-blue w-full h-16">
       <Head>
         <title>Create Next App</title>
       </Head>
