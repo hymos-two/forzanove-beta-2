@@ -1,4 +1,6 @@
-/* hello world */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 html,
 body {
