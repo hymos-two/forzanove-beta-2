@@ -1,17 +1,23 @@
 //components
 import Head from 'next/head';
 import Image from 'next/image';
+import logo from '../public/images/forzanove-logo.png';
 //hooks
 import { useWindowSize } from '../src/hooks/useWindowSize';
 
 export default function Home() {
   return (
     <Container title="Forzanove 09">
-      <div className="grid grid-cols-8 h-screen relative bg-[url('../public/img/forzanove-bg.png')] bg-cover bg-center">
-        <div className="col-span-3 bg-black-100"></div></div>
-        <div className="absolute">
-          <Image src={forzanoveLogo} />
+      <div className="grid grid-cols-8 ">
+        <div className="col-start-2 col-span-6 z-10 flex">
+          <Image src={logo} height={76} width={76} />
+          <h1 className="text-lg text-white">
+            Forza
+            <br />
+            Nove ⸻
+          </h1>
         </div>
+      </div>
     </Container>
   );
 }
@@ -27,6 +33,16 @@ function Container(props) {
       <Head>
         <title>{props.title}</title>
       </Head>
+
+      {/* background */}
+      <div className="w-full h-screen absolute bg-[url('../public/images/forzanove-bg.png')] bg-cover bg-center"></div>
+      <div
+        className="bg-black-100 absolute"
+        style={{
+          width: (3 / 8) * size.width,
+          height: size.height,
+        }}
+      ></div>
 
       {props.children}
     </div>
