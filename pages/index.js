@@ -15,7 +15,7 @@ export default function Home() {
           <h1 className="text-lg text-white">
             Forza
             <br />
-            Nove ⸻
+            Nove ⸻ok
           </h1>
         </div>
       </div>
