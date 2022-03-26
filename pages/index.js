@@ -1,6 +1,7 @@
 //components
 import Head from 'next/head';
 import Image from 'next/image';
+
 import logo from '../public/images/forzanove-logo.png';
 //hooks
 import { useWindowSize } from '../src/hooks/useWindowSize';
@@ -31,6 +32,24 @@ function Container(props) {
       style={{ height: size.height - 1 }}
     >
       <Head>
+        <link
+          rel="preload"
+          href="../public/fonts/IBMPlexSans-Regular.ttf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="../public/fonts/IBMPlexMono-Regular.ttf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="../public/fonts/IBMPlexMono-Medium.ttf"
+          as="font"
+          crossOrigin=""
+        />
         <title>{props.title}</title>
       </Head>
 
