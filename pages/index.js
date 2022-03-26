@@ -6,7 +6,10 @@ import { useWindowSize } from '../src/hooks/useWindowSize';
 export default function Home() {
   return (
     <Container title="Forzanove 09">
-      <div className="grid grid-cols-8"></div>
+      <div className="grid grid-cols-8">
+        <div></div>
+        <div></div>
+      </div>
     </Container>
   );
 }
@@ -16,7 +19,7 @@ function Container(props) {
 
   return (
     <div
-      className="font-sans bg-black-100 w-full"
+      className="font-sans text-white bg-black-100 w-full"
       style={{ height: size.height - 1 }}
     >
       <Head>
