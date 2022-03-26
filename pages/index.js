@@ -7,8 +7,7 @@ export default function Home() {
   return (
     <Container title="Forzanove 09">
       <div className="grid grid-cols-8">
-        <div></div>
-        <div></div>
+        <div className="col-span-3">Hello World</div>
       </div>
     </Container>
   );
